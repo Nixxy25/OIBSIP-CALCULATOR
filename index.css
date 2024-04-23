@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(111, 93, 214);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+.display{
+    height: 80px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(215, 215, 226);
+    padding: 10px;
+    outline: none;
+    color: rgb(124, 48, 196);
+}
+.buttons {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(5, 1fr);
+}
+button{
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(124, 48, 196);
+    background-color: rgb(215, 215, 226);
+}
+button:active{
+    background-color: rgb(93, 93, 172);
+    color: azure;
+}
+.enter{
+    grid-column:  4 / span 2 ;
+    background-color:  rgb(93, 93, 172);
+    color: rgb(229, 230, 238);
+    font-size: 15px;
+}
+.enter:active{
+    background-color:rgb(164, 164, 207); 
+    color: rgb(124, 48, 196);
+}
+.clear{
+    grid-column:  3 / span 2 ;
+}
+.operator{
+    background-color: rgb(164, 164, 207);
+}
